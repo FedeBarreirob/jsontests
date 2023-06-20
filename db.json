@@ -1,7 +1,62 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "namespaceFlows": [
+    {
+      "broker": "elbroker",
+      "domain": "mydomain.com",
+      "name": "example.mydomain.com",
+      "show": true,
+      "allowed_users": [
+        {
+          "name": "fede"
+        }
+      ],
+      "flows": [
+        {
+          "name": "flow://temperature.example.mydomain.com",
+          "status": "Available"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "broker": "brokerB",
+      "dominio": "mydomain.com",
+      "name": "house.mydomain.com",
+      "show": false,
+      "flows": [
+        {
+          "name": "flow://weqeeee.house.mydomain.com",
+          "status": "Available"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "broker": "brokerB",
+      "dominio": "mydomain.com",
+      "name": "airport.mydomain.com",
+      "show": true,
+      "flows": [
+        {
+          "name": "flow://room.airport.mydomain.com",
+          "status": "Available"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "broker": "brokerB",
+      "dominio": "example.es",
+      "name": "market.company.es",
+      "show": false,
+      "flows": [],
+      "disabledCreateFlows": true,
+      "id": 4,
+      "allowed_users": [
+        {
+          "name": "fede"
+        }
+      ]
+    }
   ]
 }
